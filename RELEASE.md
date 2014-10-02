@@ -4,8 +4,9 @@ Release Notes
 v0.6.1, Oct 3, 2014
 -------------------
 * create repository at github based on fork from original project on sourceforge
+* last edit at sourceforge was on Sep 9, 2014
 
-v0.6, unknown date
+v0.6, Apr 29,2013
 ------------------
 * Cairo based rendering.
 * Zooming support.
