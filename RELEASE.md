@@ -5,12 +5,88 @@ v0.6.1, Oct 3, 2014
 -------------------
 * create repository at github based on fork from original project on sourceforge
 * last edit at sourceforge was on Sep 9, 2014
+* renaming the fork to pdfshuffler-ng to avoid name-conflicts
 
-v0.6, Apr 29,2013
-------------------
+v0.6
+----
 * Cairo based rendering.
 * Zooming support.
 * Progressbar indicating loading of files.
 * New user interface with a conventional menubar and toolbar.
 * Export only selected pages option in the right-click menu from Alexander Hirzel.
 * Hungarian, Japanese and Chinese translations.
+
+v0.5.1
+------
+* Many bug fixes (3011515, 3027933, 3030180).
+* Czech translation.
+
+v0.5
+----
+* "About" dialog from rodolphe.
+* Italian and French translations.
+* Remember last export/import directory.
+* Replace confirmation message from ftsamis.
+* Failed to export error message from Külaots.
+* Patch fixing multiple rotations from Külaots.
+
+v0.4.2
+------
+* Patch cancel-file-open-fix.patch from Serafeim Zanikolas.
+* Patch fix-temp-dirname.patch from Serafeim Zanikolas.
+* The problem with thumbnail creation on Xservers with color depth other
+  than 24 has been fixed. Closes bug #2789181.
+* Pressing quit button during loading a document doesn't freeze the
+  application anymore.
+* Dimensions of the main window respecting small screen sizes.
+
+v0.4.1
+------
+* Forced MediaBox dimensions returned from pyPdf to be of type float.
+* Fixed a bug which messed up cropping if the imported document included
+  already rotated pages.
+
+v0.4
+----
+* The library python-poppler replaced ghostscript for the rendering of
+  pdf pages.
+* A multi-threading mechanism has been implemented in order to prevent
+  program from becoming inactive during loading of pdf files with many
+  pages.
+* A workaround for bug lp:#355479 has been included.
+* File permissions have been corrected.
+* The patch from fabianaffolter has been applied on the .desktop file
+  and the Category of the application has been changed from "Graphics"
+  to "Office".
+
+v0.3.1
+------
+* Fixes the bug, that was leading to loss of the crop information of a
+  page after draggging ane dropping it to a second instance of
+  pdfshuffler.
+
+v0.3
+----
+* Page rotation and cropping has been added.
+* Multiple items selection has been enabled and drag and drop support
+  for multiple selected items has been implemented.
+* Autoscroll during drag and drop.
+* Multilanguage support has been implemented. German, spanish and
+  greek translations incluced.
+* Export to pdf with filename which overrides an imported pdf filename
+  now works.
+
+v0.2
+----
+* A great part of the programm has been rewritten. A new and more 
+  flexible mechanism for loading the document pages has been implemented.
+* Drag and drop functionality has been improved. Now drag and drop of 
+  pages between different instances of PDF-Shuffler is possible.
+* An application icon has been created.
+
+v0.1
+----
+* First release. Implementation of a GUI for pyPdf using python-gtk.
+  For the rendering of the pdf documents the programm gs (ghostscript) 
+  has been used. This is a first just working approach. There is a lot
+  more to do.
