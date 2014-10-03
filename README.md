@@ -3,7 +3,7 @@ pdfshuffler-ng
 
 Advancing the development of PDF-Shuffler.
 
-This is a fork of "PDF-Shuffler 0.6" by Konstantinos Poulios from sourceforge.org [1] which is licensed under GPLv3 (or later). Unfortunately, many feature requests and bug reports have been filed over there and seem to remain due to inactive development.
+This is a for-private-use fork of "PDF-Shuffler 0.6" by Konstantinos Poulios from sourceforge.org [1] which is licensed under GPLv3 (or later). Unfortunately, many feature requests and bug reports have been filed over there and seem to remain due to inactive development of this gtk2-based branch.
 
 
 The original README stated:
@@ -25,5 +25,7 @@ Run
 
 as superuser.
 
+References
+----------
 
 [1] http://sourceforge.net/projects/pdfshuffler/
