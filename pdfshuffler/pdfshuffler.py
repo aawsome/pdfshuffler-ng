@@ -1090,7 +1090,6 @@ class PDF_Renderer(threading.Thread,gobject.GObject):
 
 def main():
     """This function starts PdfShuffler"""
-    gtk.gdk.threads_init()
     gobject.threads_init()
     PdfShuffler()
     gtk.main()
