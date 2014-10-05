@@ -85,8 +85,6 @@ class PdfShuffler:
     prefs = {
         'window width': min(700, gtk.gdk.screen_get_default().get_width() / 2),
         'window height': min(600, gtk.gdk.screen_get_default().get_height() - 50),
-        'window x': 0,
-        'window y': 0,
         'initial thumbnail size': 300,
         'initial zoom level': -14,
     }
@@ -139,7 +137,6 @@ class PdfShuffler:
         self.window = self.uiXML.get_object('main_window')
         self.window.set_title(APPNAME)
         self.window.set_border_width(0)
-        self.window.move(self.prefs['window x'], self.prefs['window y'])
         self.window.set_default_size(self.prefs['window width'],
                                      self.prefs['window height'])
         self.window.connect('delete_event', self.close_application)
@@ -1078,14 +1075,8 @@ class PDF_Renderer(threading.Thread,gobject.GObject):
                     print e
 
 
-def main():
+if __name__ == '__main__':
     """This function starts PdfShuffler"""
-    gtk.gdk.threads_init()
-    gtk.gdk.threads_enter()
     PdfShuffler()
     gtk.main()
-    gtk.gdk.threads_leave()
-
-if __name__ == '__main__':
-    main()
 
