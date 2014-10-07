@@ -66,6 +66,11 @@ except:
     sys.exit(1)
 
 import gobject      # for using custom signals
+#initialization of threads is no more required as of GObject 3.10.2+, however
+#there seem to be some issues with displaying the thumbnails on some systems
+#if the following line is missing
+gobject.threads_init()
+
 import pango        # for adjusting the text alignment in CellRendererText
 import gio          # for inquiring mime types information
 import cairo
